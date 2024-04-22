@@ -1,7 +1,8 @@
 import telebot
 import requests
+import os
 
-bot = telebot.TeleBot('7013468125:AAE5SgOciEi7vIfKuY1GneVIuQDZkKl4IF4')
+bot = telebot.TeleBot(os.environ.get('TG_API'))
 
 @bot.message_handler(commands=['start'])
 def main(message):
