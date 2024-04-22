@@ -1,7 +1,7 @@
 import telebot
 import requests
 import os
-
+# print(os.environ.get('TG_API'))
 bot = telebot.TeleBot(os.environ.get('TG_API'))
 
 @bot.message_handler(commands=['start'])
